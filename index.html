@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Гусак, який боронить Україну">
+        <meta name="keywords" content="Гусак, Україна, Бандера">
+        <meta name="author" content="BanderaGus">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="preload" href="./img/gus-anim.gif" as="image">
+        <link rel="stylesheet" href="css/style.css">
+        <title>BanderaGus | Головна</title>
+    </head>
+
+    <body>
+
+        <section class="main-page">
+            <div class="wrapper">
+                <a class="main-page-logo-link" href="#">
+                    <img class="main-page-logo" src="/img/logo.svg" alt="logo">
+                </a>
+                <div class="main-page-text-container">
+                    <p class="main-page-greeting">Доброго вечора, ми з України</p>
+                    <h1 class="main-page-title">Бандерогусь</h1>
+                    <p class="main-page-description">
+                        Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми
+                        подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава
+                        Україні!
+                    </p>
+                    <button class="main-page-button" type="button" id="go-to-form-btn">Запустити гуся</button>
+                </div>
+                <img class="main-page-image" loading="lazy" alt="image" src="/img/Gus-1.svg">
+            </div>
+        </section>
+
+        <section class="facts">
+            <img class="facts-trezub" src="/img/trezub.svg" alt="Трезуб">
+            <h2 class="facts-title">Цікаві факти про бандерогусей</h2>
+            <p class="facts-desc">
+                Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть
+                атакувати ворога системою надпотужного
+                озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами
+            </p>
+            <div class="wrapper">
+                <ul class="facts-list">
+                    <li class="facts-list-item">
+                        <img class="facts-list-image" src="/img/fact1.svg" alt="image">
+                        <h3 class="facts-list-title">Система навігації</h3>
+                        <p class="facts-list-desc">
+                            Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть
+                            на етапі збірки
+                        </p>
+                    </li>
+                    <li class="facts-list-item">
+                        <img class="facts-list-image" src="/img/fact2.svg" alt="image">
+                        <h3 class="facts-list-title">Очі-тепловізори</h3>
+                        <p class="facts-list-desc">
+                            Допомагають виявити характер сигнатури об’єктів та значно
+                            підвищують точність удару
+                        </p>
+                    </li>
+                    <li class="facts-list-item">
+                        <img class="facts-list-image" src="/img/fact3.svg" alt="image">
+                        <h3 class="facts-list-title">Байракрила</h3>
+                        <p class="facts-list-desc">
+                            Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
+                            «ніхріна собі» кілометрів
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form-container">
+            <form class="form" action="submit" method="post" id="form">
+                <img class="form-trezub" src="/img/trezub.svg" alt="Герб України">
+                <h2 class="form-title">Поділися, будь ласка, поштою</h2>
+                <p class="form-desc">та запиши гуся до бандерозаганону</p>
+                <!-- <div class="form-input-container"> -->
+                <label class="form-label" for="name">Ім'я</label>
+                <input class="form-input" id="user-name" type="text" placeholder="Ім'я" required>
+                <!-- </div> -->
+                <!-- <div class="form-input-container"> -->
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="user-email" type="email" placeholder="Email" required>
+                <!-- </div> -->
+                <button class="form-button" type="submit" id="launch-btn">Запустити гуся</button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p class="footer-text">© 2023 BanderaGus. Всі права захищені.</p>
+            <a class="footer-link" href="#">Політика конфіденційності</a>
+        </footer>
+        <script type="module" src="js/form.js"></script>
+
+    </body>
+
+</html>
